@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<title>お問い合わせ | 合同会社ITOYU WORKS</title>
+<meta name="description" content="お問い合わせページ。合同会社ITOYU WORKS へのご連絡はフォームまたはメールで承ります。" />
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="canonical" href="https://itoyu-works.com/contact" />
+<link rel="icon" href="/favicon.ico" />
+<link rel="stylesheet" href="/styles.css" />
+<meta name="theme-color" content="#0e0f12"/>
+<meta name="color-scheme" content="dark light"/>
+<meta property="og:site_name" content="合同会社ITOYU WORKS"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://itoyu-works.com/og.png"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "合同会社ITOYU WORKS",
+  "url": "https://itoyu-works.com/contact",
+  "email": "info@itoyu-works.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "東京都渋谷区神宮前6丁目",
+    "postalCode": "150-0001",
+    "addressCountry": "JP"
+  }
+}
+</script>
+
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="nav">
+      <a href="/">Home</a>
+      <a href="/contact">Contact</a>
+      <a href="/disclosure">電子公告</a>
+    </div>
+  </header>
+  <main>
+    <h1>お問い合わせ</h1>
+    <div class="card">
+      <p>以下のフォームまたはメール（<a href="mailto:info@itoyu-works.com">info@itoyu-works.com</a>）にてご連絡ください。</p>
+      <!-- Google フォームを使う場合は以下を差し替え -->
+      <!-- <iframe src="＜Googleフォームの公開URL＞" width="100%" height="1000" frameborder="0">読み込んでいます…</iframe> -->
+      <form action="mailto:info@itoyu-works.com" method="post" enctype="text/plain">
+        <label>お名前<br><input name="name" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #2d3650;background:#0f1320;color:#e9ecf1"></label><br><br>
+        <label>メールアドレス<br><input type="email" name="email" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #2d3650;background:#0f1320;color:#e9ecf1"></label><br><br>
+        <label>ご用件<br><textarea name="message" rows="6" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #2d3650;background:#0f1320;color:#e9ecf1"></textarea></label><br><br>
+        <button class="btn" type="submit">送信</button>
+      </form>
+      <p class="muted">※ 本格運用では Google フォームや外部フォーム（Formspree等）に差し替えると到達率・管理が安定します。</p>
+    </div>
+  </main>
+  <footer>© 2025 合同会社ITOYU WORKS</footer>
+</div>
+</body>
+</html>
